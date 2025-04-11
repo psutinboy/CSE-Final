@@ -47,8 +47,8 @@
   <display_row_from_adc><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>8</LINE></display_row_from_adc>
   <adc_row_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>16</LINE></adc_row_loop>
   <adc_row_done><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>27</LINE></adc_row_done>
-  <display_shift_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>31</LINE></display_shift_loop>
-  <display_shift_done><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>37</LINE></display_shift_done>
+  <create_mask_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>34</LINE></create_mask_loop>
+  <mask_done><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>42</LINE></mask_done>
   <main_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>30</LINE></main_loop>
   <end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>42</LINE></end>
  </LABELS>

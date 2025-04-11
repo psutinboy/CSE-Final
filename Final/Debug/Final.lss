@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm Thu Apr 10 10:12:18 2025
+AVRASM ver. 2.2.8  C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm Fri Apr 11 12:59:30 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
 C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(19): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\common_macros.inc'
@@ -1013,7 +1013,7 @@ C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(27): In
 000000 940c 0040                 	JMP MAIN
                                  
                                  .ORG 0x1A
-00001a 940c 0101                 	JMP timer1_overflow_service
+00001a 940c 0104                 	JMP timer1_overflow_service
                                  
                                  
                                  .ORG 0x40
@@ -1415,14 +1415,14 @@ C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(27): In
 0000e5 9508                      	RET
                                  .include "matrix_display.asm"
                                  
-                                 ; Matrix Display Support - Displays 1 row based on ADC input
+                                 ; Matrix Display Support - Displays rows based on ADC input
                                  ;-----------------------------------------------------
-                                 ; Assumes ADC result is in R24:R25 (from 0–1023)
-                                 ; Lights a single row on the 8x8 matrix via shift registers
+                                 ; Assumes ADC result is in R24:R25 (from 0â€“1023)
+                                 ; Lights rows 0 through N on the 8x8 matrix via shift registers
                                  ;-----------------------------------------------------
                                  
                                  display_row_from_adc:
-                                 	; Map ADC to 0–7 row index
+                                 	; Map ADC to 0â€“7 row index
 0000e6 2722                      	CLR R18
 0000e7 2f48                      	MOV R20, R24
 0000e8 2f59                      	MOV R21, R25
@@ -1442,30 +1442,35 @@ C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(27): In
                                  
                                  adc_row_done:
 0000f4 e080                      	LDI R24, 0x00        ; All columns ON (active LOW)
-0000f5 e091                      	LDI R25, 1
-0000f6 2700                      	CLR R16
-                                 display_shift_loop:
-0000f7 1706                      	CP R16, R22
-0000f8 f019                      	BREQ display_shift_done
-0000f9 0f99                      	LSL R25
-0000fa 9503                      	INC R16
-0000fb cffb                      	RJMP display_shift_loop
-                                 display_shift_done:
-0000fc 9590                      	COM R25              ; Invert row (make only 1 LOW)
-0000fd 940e 00b7                 	CALL write_word
-0000ff 9508                      	RET
-                                 
+0000f5 e090                      	LDI R25, 0           ; Start with all rows OFF
+                                 	
+                                 	; Create a mask with bits 0 through R22 set
+0000f6 e001                      	LDI R16, 1           ; Start with bit 0 set
+0000f7 e010                      	LDI R17, 0           ; Counter
+                                 create_mask_loop:
+0000f8 1716                      	CP R17, R22
+0000f9 f424                      	BRGE mask_done       ; If counter >= row number, we're done
+0000fa 0f00                      	LSL R16              ; Shift left
+0000fb 6001                      	ORI R16, 1           ; Set the bottom bit
+0000fc 9513                      	INC R17              ; Increment counter
+0000fd cffa                      	RJMP create_mask_loop
+                                 	
+                                 mask_done:
+0000fe 2f90                      	MOV R25, R16         ; Move mask to R25
+0000ff 9590                      	COM R25              ; Invert rows (active LOW)
+000100 940e 00b7                 	CALL write_word
+000102 9508                      
                                  ; Setup complete—loop forever
                                  main_loop:
-000100 cfff                      	rjmp main_loop
+000103 cfff                      	rjmp main_loop
                                  
                                  ;-----------------------------------------------------
                                  ; Timer1 Overflow ISR
                                  ;-----------------------------------------------------
                                  timer1_overflow_service:
-000101 940e 005f                 	CALL read_converter				; Result in R24:R25
-000103 940e 00e6                 	CALL display_row_from_adc		; Convert ADC to row and display
-000105 9518                      	RETI
+000104 940e 005f                 	CALL read_converter				; Result in R24:R25
+000106 940e 00e6                 	CALL display_row_from_adc		; Convert ADC to row and display
+000108 9518                      	RETI
                                  
                                  ;-----------------------------------------------------
 
@@ -1487,7 +1492,7 @@ counted separately from r26..r31 here.
 "ATmega328P" register use summary:
 x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   4 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 102 r17:  54 r18:   3 r19:   0 r20:   2 
+r13:   0 r14:   0 r15:   0 r16: 103 r17:  57 r18:   3 r19:   0 r20:   2 
 r21:   2 r22:   3 r23:   3 r24:   5 r25:   7 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:   0 r31:   0 
 Registers used: 10 out of 35 (28.6%)
@@ -1495,29 +1500,29 @@ Registers used: 10 out of 35 (28.6%)
 "ATmega328P" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   1 add   :   1 adiw  :   0 and   :  10 
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   2 brcs  :   0 break :   0 breq  :   2 brge  :   0 brhc  :   0 
+brcc  :   2 brcs  :   0 break :   0 breq  :   1 brge  :   1 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   0 
 brne  :   2 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :   3 cbi   :   0 cbr   :   0 
-clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :   6 cls   :   0 
+clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :   5 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :  11 cp    :   2 cpc   :   1 
 cpi   :   1 cpse  :   0 dec   :   2 eor   :   0 fmul  :   0 fmuls :   0 
 fmulsu:   0 icall :   0 ijmp  :   0 in    :  19 inc   :   2 jmp   :   4 
-ld    :   0 ldd   :   0 ldi   :  35 lds   :   5 lpm   :   0 lsl   :   2 
-lsr   :   0 mov   :   6 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :  10 ori   :   0 out   :  19 pop   :   2 
+ld    :   0 ldd   :   0 ldi   :  37 lds   :   5 lpm   :   0 lsl   :   2 
+lsr   :   0 mov   :   7 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   0 or    :  10 ori   :   1 out   :  19 pop   :   2 
 push  :   2 rcall :   0 ret   :   4 reti  :   1 rjmp  :   5 rol   :   3 
 ror   :   0 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   2 sbrc  :   0 sbrs  :   1 sec   :   0 seh   :   0 
 sei   :   1 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
 sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  11 
 sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 34 out of 113 (30.1%)
+Instructions used: 36 out of 113 (31.9%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00020e    406      0    406   32768   1.2%
+[.cseg] 0x000000 0x000214    412      0    412   32768   1.3%
 [.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
