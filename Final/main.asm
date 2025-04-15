@@ -5,38 +5,36 @@
 ; Author : Grant Ledbetter,  Jonas Garibay, Bobby Winters
 ;
 
-.ORG 0x00
+.ORG 0x0							;location for reset
 	JMP MAIN
-
-.ORG 0x1A
+.ORG 0x1A							;timer1 overflow service request
 	JMP timer1_overflow_service
-
-
-.ORG 0x40
-;-----------------------------------------------------
+;----------------------------------------------------------------------------
 MAIN:
 
-.include "common_macros.inc"
-.include "adc_macros.inc"
-.include "adc.asm"
-.include "shift_to_register_macros.inc"
-.include "shift_to_register.asm"
-.include "timer_interrupt_macros.inc"
-.include "timer_interrupt.asm"
-.include "matrix_core.asm"
-.include "matrix_display.asm"
+.include "common_macros-3.inc"
+.include "shift_to_register_macros-2.inc"
+.include "shift_to_register-4.asm"
+.include "timer_interrupt_macros-2.inc"
+.include "timer_interrupt-2.asm"
 
-; Setup complete—loop forever
+.include "adc_macros-1.inc"
+.include "adc-1.asm"
+
+.include "matrix_control_macros.inc"
+.include "matrix_control.asm"
+
+; Initialize components
+CLR R0                      ; Clear R0 for use in matrix control
+CALL matrix_init            ; Initialize LED matrix control variables
+
 main_loop:
-	rjmp main_loop
+	CALL display_matrix     ; Display the LED matrix based on pot value
+	jmp main_loop
 
-;-----------------------------------------------------
-; Timer1 Overflow ISR
-;-----------------------------------------------------
-timer1_overflow_service:
-	CALL read_converter				; Result in R24:R25
-	CALL display_row_from_adc		; Convert ADC to row and display
-	RETI
-
-;-----------------------------------------------------
 end: rjmp end
+
+timer1_overflow_service:
+	CALL read_converter     ; Read the potentiometer value into R24:R25
+	CALL update_matrix_rows ; Update the number of rows to light based on pot value
+	RETI

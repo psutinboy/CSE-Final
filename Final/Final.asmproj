@@ -66,34 +66,7 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="adc.asm">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="adc_macros.inc">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="matrix_core.asm">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="matrix_display.asm">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="common_macros.inc">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="main.asm">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="shift_to_register.asm">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="shift_to_register_macros.inc">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="timer_interrupt.asm">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="timer_interrupt_macros.inc">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

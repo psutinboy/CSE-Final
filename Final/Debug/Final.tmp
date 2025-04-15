@@ -10,15 +10,15 @@
  <SOURCE_FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</SOURCE_FILE>
  <INCLUDED_FILES>
   <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\common_macros.inc</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc_macros.inc</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc.asm</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register_macros.inc</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register.asm</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt_macros.inc</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt.asm</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_core.asm</FILE>
-  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\common_macros-3.inc</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register_macros-2.inc</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register-4.asm</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt_macros-2.inc</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt-2.asm</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc_macros-1.inc</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc-1.asm</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control_macros.inc</FILE>
+  <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
   <FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\Debug\Final.obj</FILE>
@@ -31,25 +31,29 @@
   <FILE>Final.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <MAIN><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>17</LINE></MAIN>
-  <timer1_overflow_service><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>36</LINE></timer1_overflow_service>
-  <justification_set><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc.asm</FILE><LINE>28</LINE></justification_set>
-  <read_converter_end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc.asm</FILE><LINE>47</LINE></read_converter_end>
-  <read_converter><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc.asm</FILE><LINE>32</LINE></read_converter>
-  <keep_polling><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc.asm</FILE><LINE>35</LINE></keep_polling>
-  <shift_word_end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register.asm</FILE><LINE>53</LINE></shift_word_end>
-  <shift_word><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register.asm</FILE><LINE>24</LINE></shift_word>
-  <shift_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register.asm</FILE><LINE>39</LINE></shift_loop>
-  <finish_shift_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register.asm</FILE><LINE>44</LINE></finish_shift_loop>
-  <write_word><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_core.asm</FILE><LINE>5</LINE></write_word>
-  <matrix_shift_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_core.asm</FILE><LINE>15</LINE></matrix_shift_loop>
-  <matrix_finish_shift_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_core.asm</FILE><LINE>24</LINE></matrix_finish_shift_loop>
-  <display_row_from_adc><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>8</LINE></display_row_from_adc>
-  <adc_row_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>16</LINE></adc_row_loop>
-  <adc_row_done><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>27</LINE></adc_row_done>
-  <create_mask_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>34</LINE></create_mask_loop>
-  <mask_done><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm</FILE><LINE>42</LINE></mask_done>
-  <main_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>30</LINE></main_loop>
-  <end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>42</LINE></end>
+  <MAIN><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>13</LINE></MAIN>
+  <timer1_overflow_service><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>37</LINE></timer1_overflow_service>
+  <shift_word_end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register-4.asm</FILE><LINE>53</LINE></shift_word_end>
+  <shift_word><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register-4.asm</FILE><LINE>24</LINE></shift_word>
+  <shift_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register-4.asm</FILE><LINE>39</LINE></shift_loop>
+  <finish_shift_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register-4.asm</FILE><LINE>44</LINE></finish_shift_loop>
+  <justification_set><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc-1.asm</FILE><LINE>28</LINE></justification_set>
+  <read_converter_end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc-1.asm</FILE><LINE>47</LINE></read_converter_end>
+  <read_converter><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc-1.asm</FILE><LINE>32</LINE></read_converter>
+  <keep_polling><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc-1.asm</FILE><LINE>35</LINE></keep_polling>
+  <matrix_row_patterns><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>16</LINE></matrix_row_patterns>
+  <num_rows_to_light><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>21</LINE></num_rows_to_light>
+  <current_row><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>22</LINE></current_row>
+  <matrix_init_end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>37</LINE></matrix_init_end>
+  <matrix_init><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>30</LINE></matrix_init>
+  <update_matrix_rows_end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>75</LINE></update_matrix_rows_end>
+  <update_matrix_rows><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>42</LINE></update_matrix_rows>
+  <store_num_rows><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>71</LINE></store_num_rows>
+  <display_matrix_end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>135</LINE></display_matrix_end>
+  <display_matrix><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>80</LINE></display_matrix>
+  <row_is_active><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>109</LINE></row_is_active>
+  <save_current_row><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm</FILE><LINE>105</LINE></save_current_row>
+  <main_loop><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>31</LINE></main_loop>
+  <end><FILE>C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm</FILE><LINE>35</LINE></end>
  </LABELS>
 </ASSEMBLER_INFO>

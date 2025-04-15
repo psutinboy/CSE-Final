@@ -1,26 +1,26 @@
 
-AVRASM ver. 2.2.8  C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm Fri Apr 11 12:59:30 2025
+AVRASM ver. 2.2.8  C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm Tue Apr 15 10:19:57 2025
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(19): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\common_macros.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(20): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc_macros.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(21): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc.asm'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(22): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register_macros.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(23): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register.asm'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(24): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt_macros.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(25): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt.asm'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(26): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_core.asm'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(27): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(15): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\common_macros-3.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(16): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register_macros-2.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(17): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register-4.asm'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(18): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt_macros-2.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(19): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt-2.asm'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(21): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc_macros-1.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(22): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc-1.asm'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(24): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control_macros.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(25): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(19): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\common_macros.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(20): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc_macros.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(21): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc.asm'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(22): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register_macros.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(23): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register.asm'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(24): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt_macros.inc'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(25): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt.asm'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(26): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_core.asm'
-C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(27): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_display.asm'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(15): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\common_macros-3.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(16): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register_macros-2.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(17): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\shift_to_register-4.asm'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(18): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt_macros-2.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(19): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\timer_interrupt-2.asm'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(21): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc_macros-1.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(22): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\adc-1.asm'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(24): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control_macros.inc'
+C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(25): Including file 'C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\matrix_control.asm'
                                  
                                  ;
                                  
@@ -1009,18 +1009,14 @@ C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(27): In
                                  ; Author : Grant Ledbetter,  Jonas Garibay, Bobby Winters
                                  ;
                                  
-                                 .ORG 0x00
-000000 940c 0040                 	JMP MAIN
-                                 
-                                 .ORG 0x1A
-00001a 940c 0104                 	JMP timer1_overflow_service
-                                 
-                                 
-                                 .ORG 0x40
-                                 ;-----------------------------------------------------
+                                 .ORG 0x0							;location for reset
+000000 940c 001c                 	JMP MAIN
+                                 .ORG 0x1A							;timer1 overflow service request
+00001a 940c 00e0                 	JMP timer1_overflow_service
+                                 ;----------------------------------------------------------------------------
                                  MAIN:
                                  
-                                 .include "common_macros.inc"
+                                 .include "common_macros-3.inc"
                                  
                                  ***
                                  ***
@@ -1114,7 +1110,145 @@ C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(27): In
                                  	LD @2, X
                                  .ENDMACRO
                                  ;----------------------------------------------------------------------------------------------------
-                                 .include "adc_macros.inc"
+                                 .include "shift_to_register_macros-2.inc"
+                                 
+                                 ***
+                                 ***  shift_to_register_macros
+                                 ***
+                                 ***  Bobby Winters, bwinters@pittstate.edu, 4/4/2025
+                                 ***
+                                 ************************************************************************/
+                                 ;
+                                 ; This file contains parameters for use with shift registers
+                                 ;
+                                 ;shift register parameters
+                                 ;needed for shift_to_register.asm
+                                 ;
+                                 ;----------------------------------------------------------------------------
+                                 .equ CLOCK=5
+                                 .equ LATCH=4
+                                 .equ DATA=3
+                                 .equ CARRY=0
+                                 .equ word_length=0x10
+                                 .include "shift_to_register-4.asm"
+                                 
+                                 /******************************************************************************
+                                 ***
+                                 ***  shift_to_register.asm
+                                 ***
+                                 ***  Bobby Winters, bwinters@pittstate.edu, 4/4/2025
+                                 ***
+                                 ******************************************************************************/
+                                 ;;;
+                                 ;;;  This is used to use shift registers.
+                                 ;;;
+                                 ;;;----------------------------------------------------------------------------
+                                 ;;;
+                                 ;;; This is where we setup portb for output.  It must be run before the shift register
+                                 ;;; will operate correctly.
+                                 ;;;
+                                 ;;;-----------------------------------------------------------------------------
+                                 ;setup portb for output
+00001c b104
+00001d e018
+00001e 2b01
+00001f b904                      SETBIT DDRB, DATA
+000020 b104
+000021 e110
+000022 2b01
+000023 b904                      SETBIT DDRB, LATCH
+000024 b104
+000025 e210
+000026 2b01
+000027 b904                      SETBIT DDRB, CLOCK
+                                 ;--------------------------------------------------------------------------------
+000028 940c 0053                 jmp shift_word_end
+                                 shift_word:
+                                 	;we will write the word contained in R24 and R25 to the shift registers
+                                 	;INITIALIZE COUNTER
+                                 	;Uses R2, R16, R17, R24, R25
+                                 
+00002a e100                      	LDI R16, word_length
+00002b 2e20                      	MOV R2, R16
+                                 
+                                 	;CLOSE LATCH
+00002c b105
+00002d e110
+00002e 9510
+00002f 2301
+000030 b905                      	CLEARBIT PORTB, LATCH
+                                 
+                                 	;CLEAR Carry in SREG
+000031 9488                      	CLC
+                                 	;CLEAR DATA BIT
+000032 b105
+000033 e018
+000034 9510
+000035 2301
+000036 b905                      	CLEARBIT PORTB, DATA
+                                 	shift_loop:
+000037 0f88                      		LSL R24
+000038 1f99                      		ROL R25
+000039 f420                      		BRCC finish_shift_loop
+00003a b105
+00003b e018
+00003c 2b01
+00003d b905                      		SETBIT PORTB, DATA
+                                 		finish_shift_loop:
+00003e b105
+00003f e210
+000040 2b01
+000041 b905                      		SETBIT PORTB, CLOCK			;SEND THE DATA BIT
+000042 b105
+000043 e210
+000044 9510
+000045 2301
+000046 b905                      		CLEARBIT PORTB, CLOCK
+000047 b105
+000048 e018
+000049 9510
+00004a 2301
+00004b b905                      		CLEARBIT PORTB, DATA		;RESET DATA BIT
+00004c 942a                      		DEC R2
+00004d f749                      		BRNE shift_loop
+                                 	;open latch
+00004e b105
+00004f e110
+000050 2b01
+000051 b905                      	SETBIT PORTB, LATCH
+000052 9508                      	RET
+                                 shift_word_end:
+                                 .include "timer_interrupt_macros-2.inc"
+                                 
+                                 ;needed for timer interrupt
+                                 .equ initial_timer_value=0xF000
+                                 .equ very_fast_timer=0x01
+                                 .equ fast_timer=0x02
+                                 .equ medium_timer=0x03
+                                 .equ slow_timer=0x04
+                                 .equ very_slow_timer=0x05
+                                 .equ normal_timer_mode=0x00
+                                 .equ enable_timer_interrupt=0x01
+                                 .include "timer_interrupt-2.asm"
+                                 
+                                 
+                                 ;initial value for timer/counter
+000053 e000                      LDI R16, LOW(initial_timer_value)   
+000054 9300 0084                 STS TCNT1L, R16
+000056 ef00                      LDI R16, HIGH(initial_timer_value)	
+000057 9300 0085                 STS TCNT1H, R16
+                                 ;set mode
+000059 e000                      LDI R16, normal_timer_mode
+00005a 9300 0080                 STS TCCR1A, R16
+                                 ;set internal clock/prescaler
+00005c e004                      LDI R16, slow_timer				;can be adjusted; very_slow_timer, slow_timer, medium_timer, fast_timer, very_fast_timer
+00005d 9300 0081                 STS TCCR1B, R16
+                                 ;enable overflow interrupt
+00005f e001                      LDI R16, enable_timer_interrupt
+000060 9300 006f                 STS TIMSK1, R16
+000062 9478                      SEI								;set the global interrupt flag 
+                                 
+                                 .include "adc_macros-1.inc"
                                  
                                  ;ADMUX msn parameters
                                  .equ aref=0x00
@@ -1163,316 +1297,236 @@ C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm(27): In
                                  	AND R16, R17
                                  	STS @0, R16
                                   .ENDMACRO
-                                 .include "adc.asm"
+                                 .include "adc-1.asm"
                                  
                                  
                                  ;initialize ADCSRA
                                  
-000040 2700                      CLR R16
-000041 600f                      SBR R16, (1<<ADIE)|(pre128)		;interrupt enable and set the prescaler
-000042 9300 007a                 STS ADCSRA, R16
+000063 2700                      CLR R16
+000064 600f                      SBR R16, (1<<ADIE)|(pre128)		;interrupt enable and set the prescaler
+000065 9300 007a                 STS ADCSRA, R16
                                  
                                  ;initialize ADMUX
-000044 2700                      CLR R16
-000045 6c01                      SBR R16,(int1_1)|(adc1)			;voltage and input port
-000046 9300 007c                 STS ADMUX, R16
+000067 2700                      CLR R16
+000068 6c01                      SBR R16,(int1_1)|(adc1)			;voltage and input port
+000069 9300 007c                 STS ADMUX, R16
                                  ;set pinc for input
-000048 b107                      IN R16, DDRC
-000049 e011                      LDI R17, (1<<(adc1 - 1))					;the amount of the shift matches the port pin
-00004a 9510                      COM R17
-00004b 2301                      AND R16, R17
-00004c b907                      OUT DDRC, R16
+00006b b107                      IN R16, DDRC
+00006c e011                      LDI R17, (1<<(adc1 - 1))					;the amount of the shift matches the port pin
+00006d 9510                      COM R17
+00006e 2301                      AND R16, R17
+00006f b907                      OUT DDRC, R16
                                  
                                  ;justification of ADC
                                  
                                  ;justify right by default
-00004d 9100 007c
-00004f e210
-000050 9510
-000051 2301
-000052 9300 007c                 CLEAR_SPECIAL ADMUX, ADLAR
-000054 e001                      LDI R16,adc_right_justified
-000055 3001                      CPI R16, adc_justification
-000056 f031                      BREQ justification_set
-000057 9100 007c
-000059 e210
-00005a 2b01
-00005b 9300 007c                 SET_SPECIAL ADMUX, ADLAR
+000070 9100 007c
+000072 e210
+000073 9510
+000074 2301
+000075 9300 007c                 CLEAR_SPECIAL ADMUX, ADLAR
+000077 e001                      LDI R16,adc_right_justified
+000078 3001                      CPI R16, adc_justification
+000079 f031                      BREQ justification_set
+00007a 9100 007c
+00007c e210
+00007d 2b01
+00007e 9300 007c                 SET_SPECIAL ADMUX, ADLAR
                                  justification_set:
                                  
-00005d 940c 0070                 JMP read_converter_end
+000080 940c 0093                 JMP read_converter_end
                                  ;-------------------------------------------------
                                  read_converter:
-00005f ec07                      	LDI R16, (1<<ADEN)|(1<<ADSC)|(pre128)
-000060 9300 007a                 	STS ADCSRA, R16
+000082 ec07                      	LDI R16, (1<<ADEN)|(1<<ADSC)|(pre128)
+000083 9300 007a                 	STS ADCSRA, R16
                                  	keep_polling:
-000062 9100 007a                 		LDS R16, ADCSRA
-000064 ff04                      		SBRS R16, ADIF
-000065 cffc                      		RJMP keep_polling
-000066 e100                      		LDI R16, (1<<ADIF)
-000067 9300 007a                 		STS ADCSRA, R16
-000069 9100 0078                 		LDS R16, ADCL
-00006b 2f80                      		MOV R24, R16
-00006c 9100 0079                 		LDS R16, ADCH
-00006e 2f90                      		MOV R25, R16
-00006f 9508                      		RET
+000085 9100 007a                 		LDS R16, ADCSRA
+000087 ff04                      		SBRS R16, ADIF
+000088 cffc                      		RJMP keep_polling
+000089 e100                      		LDI R16, (1<<ADIF)
+00008a 9300 007a                 		STS ADCSRA, R16
+00008c 9100 0078                 		LDS R16, ADCL
+00008e 2f80                      		MOV R24, R16
+00008f 9100 0079                 		LDS R16, ADCH
+000091 2f90                      		MOV R25, R16
+000092 9508                      		RET
                                  ;-------------------------------------------------
-                                 .include "shift_to_register_macros.inc"
+                                 
+                                 .include "matrix_control_macros.inc"
                                  
                                  ***
-                                 ***  shift_to_register_macros
+                                 ***    Matrix Control Macros
                                  ***
-                                 ***  Bobby Winters, bwinters@pittstate.edu, 4/4/2025
+                                 ***    Created: 2025
                                  ***
-                                 ************************************************************************/
-                                 ;
-                                 ; This file contains parameters for use with shift registers
-                                 ;
-                                 ;shift register parameters
-                                 ;needed for shift_to_register.asm
-                                 ;
-                                 ;----------------------------------------------------------------------------
-                                 .equ CLOCK=5
-                                 .equ LATCH=4
-                                 .equ DATA=3
-                                 .equ CARRY=0
-                                 .equ word_length=0x10
-                                 .include "shift_to_register.asm"
-                                 
-                                 /******************************************************************************
-                                 ***
-                                 ***  shift_to_register.asm
-                                 ***
-                                 ***  Bobby Winters, bwinters@pittstate.edu, 4/4/2025
-                                 ***
-                                 ******************************************************************************/
+                                 ************************************************************************************************/
                                  ;;;
-                                 ;;;  This is used to use shift registers.
+                                 ;;; matrix_control_macros.inc contains macros and values that will be used for controlling
+                                 ;;; the LED matrix on the freenove fnk0059 project board.
                                  ;;;
-                                 ;;;----------------------------------------------------------------------------
-                                 ;;;
-                                 ;;; This is where we setup portb for output.  It must be run before the shift register
-                                 ;;; will operate correctly.
-                                 ;;;
-                                 ;;;-----------------------------------------------------------------------------
-                                 ;setup portb for output
-000070 b104
-000071 e018
-000072 2b01
-000073 b904                      SETBIT DDRB, DATA
-000074 b104
-000075 e110
-000076 2b01
-000077 b904                      SETBIT DDRB, LATCH
-000078 b104
-000079 e210
-00007a 2b01
-00007b b904                      SETBIT DDRB, CLOCK
-                                 ;--------------------------------------------------------------------------------
-00007c 940c 00a7                 jmp shift_word_end
-                                 shift_word:
-                                 	;we will write the word contained in R24 and R25 to the shift registers
-                                 	;INITIALIZE COUNTER
-                                 	;Uses R2, R16, R17, R24, R25
+                                 ;-------------------------------------------------------------------------------------------------
+                                 ;;; LED Matrix Configuration
+                                 .equ MATRIX_ROWS = 8          ; Number of rows in the LED matrix
+                                 .equ MATRIX_COLS = 8          ; Number of columns in the LED matrix
                                  
-00007e e100                      	LDI R16, word_length
-00007f 2e20                      	MOV R2, R16
+                                 ;;; Matrix Control Constants
+                                 .equ MATRIX_ALL_COLS_ON = 0x00  ; Value to light all columns (active LOW)
+                                 .equ MATRIX_NO_COLS_ON = 0xFF   ; Value to turn off all columns
                                  
-                                 	;CLOSE LATCH
-000080 b105
-000081 e110
-000082 9510
-000083 2301
-000084 b905                      	CLEARBIT PORTB, LATCH
+                                 ;;; Scaling Constants for potentiometer to rows mapping
+                                 .equ POT_MAX = 1023           ; Maximum potentiometer value (10-bit ADC)
+                                 .include "matrix_control.asm"
                                  
-                                 	;CLEAR Carry in SREG
-000085 9488                      	CLC
-                                 	;CLEAR DATA BIT
-000086 b105
-000087 e018
-000088 9510
-000089 2301
-00008a b905                      	CLEARBIT PORTB, DATA
-                                 	shift_loop:
-00008b 0f88                      		LSL R24
-00008c 1f99                      		ROL R25
-00008d f420                      		BRCC finish_shift_loop
-00008e b105
-00008f e018
-000090 2b01
-000091 b905                      		SETBIT PORTB, DATA
-                                 		finish_shift_loop:
-000092 b105
-000093 e210
-000094 2b01
-000095 b905                      		SETBIT PORTB, CLOCK			;SEND THE DATA BIT
-000096 b105
-000097 e210
-000098 9510
-000099 2301
-00009a b905                      		CLEARBIT PORTB, CLOCK
-00009b b105
-00009c e018
-00009d 9510
-00009e 2301
-00009f b905                      		CLEARBIT PORTB, DATA		;RESET DATA BIT
-0000a0 942a                      		DEC R2
-0000a1 f749                      		BRNE shift_loop
-                                 	;open latch
-0000a2 b105
-0000a3 e110
-0000a4 2b01
-0000a5 b905                      	SETBIT PORTB, LATCH
-0000a6 9508                      	RET
-                                 shift_word_end:
-                                 .include "timer_interrupt_macros.inc"
+                                 ***
+                                 ***  This file matrix_control.asm contains subroutines for controlling the LED matrix
+                                 ***  using the same shift registers that were previously controlling the 7-segment display.
+                                 ***
+                                 ***  Created: 2025
+                                 ***
+                                 *************************************************************************************************/
                                  
-                                 ;needed for timer interrupt
-                                 .equ initial_timer_value=0xF000
-                                 .equ very_fast_timer=0x01
-                                 .equ fast_timer=0x02
-                                 .equ medium_timer=0x03
-                                 .equ slow_timer=0x04
-                                 .equ very_slow_timer=0x05
-                                 .equ normal_timer_mode=0x00
-                                 .equ enable_timer_interrupt=0x01
-                                 .include "timer_interrupt.asm"
+                                 ;------------------------------------------------------------------------------------------------
+                                 ; Matrix Row and Column patterns (8x8 matrix)
+                                 ; For row selection, we set the corresponding bit HIGH in the MSB of the shift register
+                                 ; For column selection, we set the corresponding bits LOW in the LSB of the shift register
+                                 ;------------------------------------------------------------------------------------------------
                                  
+                                 matrix_row_patterns:                ; Row selection patterns (MSB of shift register)
+000093 0201
+000094 0804
+000095 2010
+000096 8040                      .db 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80   ; Rows 0-7
                                  
-                                 ;initial value for timer/counter
-0000a7 e000                      LDI R16, LOW(initial_timer_value)   
-0000a8 9300 0084                 STS TCNT1L, R16
-0000aa ef00                      LDI R16, HIGH(initial_timer_value)	
-0000ab 9300 0085                 STS TCNT1H, R16
-                                 ;set mode
-0000ad e000                      LDI R16, normal_timer_mode
-0000ae 9300 0080                 STS TCCR1A, R16
-                                 ;set internal clock/prescaler
-0000b0 e004                      LDI R16, slow_timer				;can be adjusted; very_slow_timer, slow_timer, medium_timer, fast_timer, very_fast_timer
-0000b1 9300 0081                 STS TCCR1B, R16
-                                 ;enable overflow interrupt
-0000b3 e001                      LDI R16, enable_timer_interrupt
-0000b4 9300 006f                 STS TIMSK1, R16
-0000b6 9478                      SEI								;set the global interrupt flag 
-                                 .include "matrix_core.asm"
+                                 ; Reserve memory for storing the current number of rows to light
+                                 .dseg
+000100                           num_rows_to_light: .byte 1          ; Store number of rows to light (0-8)
+000101                           current_row: .byte 1                ; Store the current row being displayed (0-7)
+                                 .cseg
                                  
-                                 ; Matrix Core – shift out R24:R25 using shift registers
-                                 ;-----------------------------------------------------
+                                 ;-------------------------------------------------------------------------------------------------
+                                 ; This is run at the beginning of the program to initialize LED matrix control
+                                 ;-------------------------------------------------------------------------------------------------
+000097 940c 009f                 jmp matrix_init_end
                                  
-                                 write_word:
-0000b7 e100                      	LDI R16, 0x10
-0000b8 2e20                      	MOV R2, R16
+                                 matrix_init:
+                                     ; Initialize LED matrix variables
+000099 e000                          LDI R16, 0
+00009a 9300 0100                     STS num_rows_to_light, R16   ; Start with no rows lit
+00009c 9300 0101                     STS current_row, R16         ; Start at row 0
+00009e 9508                          RET
+                                     
+                                 matrix_init_end:
                                  
-0000b9 b105
-0000ba e110
-0000bb 9510
-0000bc 2301
-0000bd b905                      	CLEARBIT PORTB, LATCH
+                                 ;-------------------------------------------------------------------------------------------------
+00009f 940c 00b6                 jmp update_matrix_rows_end
                                  
-0000be 2700                      	CLR R16
-0000bf 930f                      	PUSH R16
+                                 update_matrix_rows:
+                                     ; This function updates the number of rows to light based on the potentiometer value
+                                     ; The potentiometer value (0-1023) is in R24:R25
+                                     
+                                     ; First, we need to scale the 10-bit ADC value (0-1023) to 0-8 rows
+                                     ; For simplicity, we'll use the high 3 bits of the ADC result (divide by 128)
+0000a1 9596                          LSR R25           ; Shift right to get the value divided by 2
+0000a2 9587                          ROR R24
+0000a3 9596                          LSR R25
+0000a4 9587                          ROR R24
+0000a5 9596                          LSR R25
+0000a6 9587                          ROR R24
+0000a7 9596                          LSR R25
+0000a8 9587                          ROR R24
+0000a9 9596                          LSR R25
+0000aa 9587                          ROR R24
+0000ab 9596                          LSR R25
+0000ac 9587                          ROR R24
+0000ad 9596                          LSR R25
+0000ae 9587                          ROR R24
+                                     
+                                     ; R24 now contains a value between 0-7, add 1 to get 1-8 rows
+0000af 9583                          INC R24
+                                     
+                                     ; Store the number of rows to light (capped at 8)
+0000b0 3089                          CPI R24, MATRIX_ROWS+1
+0000b1 f008                          BRLO store_num_rows
+0000b2 e088                          LDI R24, MATRIX_ROWS
+                                     
+                                 store_num_rows:
+0000b3 9380 0100                     STS num_rows_to_light, R24
+0000b5 9508                          RET
+                                     
+                                 update_matrix_rows_end:
                                  
-0000c0 b105
-0000c1 e018
-0000c2 9510
-0000c3 2301
-0000c4 b905                      	CLEARBIT PORTB, DATA
-                                 matrix_shift_loop:
-0000c5 910f                      	POP R16
-0000c6 bf0f                      	OUT SREG, R16
-0000c7 1f88                      	ROL R24
-0000c8 1f99                      	ROL R25
-0000c9 b70f                      	IN R16, SREG
-0000ca 930f                      	PUSH R16
-0000cb f420                      	BRCC matrix_finish_shift_loop
-0000cc b105
-0000cd e018
-0000ce 2b01
-0000cf b905                      	SETBIT PORTB, DATA
-                                 matrix_finish_shift_loop:
-0000d0 b105
-0000d1 e210
-0000d2 2b01
-0000d3 b905                      	SETBIT PORTB, CLOCK
-0000d4 b105
-0000d5 e210
-0000d6 9510
-0000d7 2301
-0000d8 b905                      	CLEARBIT PORTB, CLOCK
-0000d9 b105
-0000da e018
-0000db 9510
-0000dc 2301
-0000dd b905                      	CLEARBIT PORTB, DATA
-0000de 942a                      	DEC R2
-0000df f729                      	BRNE matrix_shift_loop
-0000e0 910f                      	POP R16
+                                 ;-------------------------------------------------------------------------------------------------
+0000b6 940c 00d8                 jmp display_matrix_end
                                  
-0000e1 b105
-0000e2 e110
-0000e3 2b01
-0000e4 b905                      	SETBIT PORTB, LATCH
-0000e5 9508                      	RET
-                                 .include "matrix_display.asm"
+                                 display_matrix:
+                                     ; This function displays the LED matrix based on stored row count
+                                     ; It displays one row at a time and cycles through all active rows
+                                     
+                                     ; Get the current row being displayed
+0000b8 9160 0101                     LDS R22, current_row
+                                     
+                                     ; Get number of rows to light
+0000ba 9170 0100                     LDS R23, num_rows_to_light
+                                     
+                                     ; Check if the current row is less than the number of rows to light
+0000bc 1767                          CP R22, R23
+0000bd f058                          BRLO row_is_active
+                                     
+                                     ; Row is not active, turn off all LEDs
+0000be e090                          LDI R25, 0x00         ; No row selected
+0000bf ef8f                          LDI R24, MATRIX_NO_COLS_ON  ; All columns off
+0000c0 940e 002a                     CALL shift_word
+                                     
+                                     ; Increment the current row and wrap around if needed
+0000c2 9563                          INC R22
+0000c3 3068                          CPI R22, MATRIX_ROWS
+0000c4 f008                          BRLO save_current_row
+0000c5 2766                          CLR R22
+                                     
+                                 save_current_row:
+0000c6 9360 0101                     STS current_row, R22
+0000c8 9508                          RET
+                                     
+                                 row_is_active:
+                                     ; Load the row pattern for current row
+0000c9 e2e6                          LDI ZL, LOW(matrix_row_patterns<<1)
+0000ca e0f1                          LDI ZH, HIGH(matrix_row_patterns<<1)
+                                     
+                                     ; Add the row index to get the correct pattern
+0000cb 0fe6                          ADD ZL, R22
+0000cc 2700                          CLR R16
+0000cd 1ff0                          ADC ZH, R16
+                                     
+                                     ; Load the row pattern into R25
+0000ce 9194                          LPM R25, Z
+                                     
+                                     ; Prepare column pattern (all columns lit = 0x00)
+0000cf e080                          LDI R24, MATRIX_ALL_COLS_ON
+                                     
+                                     ; Send to shift register
+0000d0 940e 002a                     CALL shift_word
+                                     
+                                     ; Increment the current row and wrap around if needed
+0000d2 9563                          INC R22
+0000d3 3068                          CPI R22, MATRIX_ROWS
+0000d4 f388                          BRLO save_current_row
+0000d5 2766                          CLR R22
+0000d6 940c 00c6                     JMP save_current_row
+                                     
                                  
-                                 ; Matrix Display Support - Displays rows based on ADC input
-                                 ;-----------------------------------------------------
-                                 ; Assumes ADC result is in R24:R25 (from 0â€“1023)
-                                 ; Lights rows 0 through N on the 8x8 matrix via shift registers
-                                 ;-----------------------------------------------------
+                                 ; Initialize components
+0000d8 2400                      CLR R0                      ; Clear R0 for use in matrix control
+0000d9 940e 0099                 CALL matrix_init            ; Initialize LED matrix control variables
                                  
-                                 display_row_from_adc:
-                                 	; Map ADC to 0â€“7 row index
-0000e6 2722                      	CLR R18
-0000e7 2f48                      	MOV R20, R24
-0000e8 2f59                      	MOV R21, R25
-                                 
-0000e9 e060                      	LDI R22, 0
-0000ea e870                      	LDI R23, 128
-                                 adc_row_loop:
-0000eb 1747                      	CP R20, R23
-0000ec 0752                      	CPC R21, R18
-0000ed f030                      	BRLO adc_row_done
-0000ee 9563                      	INC R22
-0000ef e810                      	LDI R17, 128
-0000f0 0f71                      	ADD R23, R17
-0000f1 2711                      	CLR R17
-0000f2 1f21                      	ADC R18, R17
-0000f3 cff7                      	RJMP adc_row_loop
-                                 
-                                 adc_row_done:
-0000f4 e080                      	LDI R24, 0x00        ; All columns ON (active LOW)
-0000f5 e090                      	LDI R25, 0           ; Start with all rows OFF
-                                 	
-                                 	; Create a mask with bits 0 through R22 set
-0000f6 e001                      	LDI R16, 1           ; Start with bit 0 set
-0000f7 e010                      	LDI R17, 0           ; Counter
-                                 create_mask_loop:
-0000f8 1716                      	CP R17, R22
-0000f9 f424                      	BRGE mask_done       ; If counter >= row number, we're done
-0000fa 0f00                      	LSL R16              ; Shift left
-0000fb 6001                      	ORI R16, 1           ; Set the bottom bit
-0000fc 9513                      	INC R17              ; Increment counter
-0000fd cffa                      	RJMP create_mask_loop
-                                 	
-                                 mask_done:
-0000fe 2f90                      	MOV R25, R16         ; Move mask to R25
-0000ff 9590                      	COM R25              ; Invert rows (active LOW)
-000100 940e 00b7                 	CALL write_word
-000102 9508                      
-                                 ; Setup complete—loop forever
                                  main_loop:
-000103 cfff                      	rjmp main_loop
+0000db 940e 00b8                 	CALL display_matrix     ; Display the LED matrix based on pot value
+0000dd 940c 00db                 	jmp main_loop
                                  
-                                 ;-----------------------------------------------------
-                                 ; Timer1 Overflow ISR
-                                 ;-----------------------------------------------------
+0000df cfff                      end: rjmp end
+                                 
                                  timer1_overflow_service:
-000104 940e 005f                 	CALL read_converter				; Result in R24:R25
-000106 940e 00e6                 	CALL display_row_from_adc		; Convert ADC to row and display
-000108 9518                      	RETI
-                                 
-                                 ;-----------------------------------------------------
+0000e0 940e 0082                 	CALL read_converter     ; Read the potentiometer value into R24:R25
+0000e2 940e 00a1                 	CALL update_matrix_rows ; Update the number of rows to light based on pot value
 
 
 RESOURCE USE INFORMATION
@@ -1490,40 +1544,40 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATmega328P" register use summary:
-x  :   0 y  :   0 z  :   0 r0 :   0 r1 :   0 r2 :   4 r3 :   0 r4 :   0 
+x  :   0 y  :   0 z  :   1 r0 :   1 r1 :   0 r2 :   2 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 103 r17:  57 r18:   3 r19:   0 r20:   2 
-r21:   2 r22:   3 r23:   3 r24:   5 r25:   7 r26:   0 r27:   0 r28:   0 
-r29:   0 r30:   0 r31:   0 
-Registers used: 10 out of 35 (28.6%)
+r13:   0 r14:   0 r15:   0 r16:  74 r17:  32 r18:   0 r19:   0 r20:   0 
+r21:   0 r22:  10 r23:   2 r24:  15 r25:  11 r26:   0 r27:   0 r28:   0 
+r29:   0 r30:   2 r31:   2 
+Registers used: 11 out of 35 (31.4%)
 
 "ATmega328P" instruction use summary:
-.lds  :   0 .sts  :   0 adc   :   1 add   :   1 adiw  :   0 and   :  10 
+.lds  :   0 .sts  :   0 adc   :   1 add   :   1 adiw  :   0 and   :   6 
 andi  :   0 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   2 brcs  :   0 break :   0 breq  :   1 brge  :   1 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   1 brlt  :   0 brmi  :   0 
-brne  :   2 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   0 call  :   3 cbi   :   0 cbr   :   0 
-clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :   5 cls   :   0 
-clt   :   0 clv   :   0 clz   :   0 com   :  11 cp    :   2 cpc   :   1 
-cpi   :   1 cpse  :   0 dec   :   2 eor   :   0 fmul  :   0 fmuls :   0 
-fmulsu:   0 icall :   0 ijmp  :   0 in    :  19 inc   :   2 jmp   :   4 
-ld    :   0 ldd   :   0 ldi   :  37 lds   :   5 lpm   :   0 lsl   :   2 
-lsr   :   0 mov   :   7 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
-neg   :   0 nop   :   0 or    :  10 ori   :   1 out   :  19 pop   :   2 
-push  :   2 rcall :   0 ret   :   4 reti  :   1 rjmp  :   5 rol   :   3 
-ror   :   0 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
+brcc  :   1 brcs  :   0 break :   0 breq  :   1 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   4 brlt  :   0 brmi  :   0 
+brne  :   1 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   6 cbi   :   0 cbr   :   0 
+clc   :   1 clh   :   0 cli   :   0 cln   :   0 clr   :   6 cls   :   0 
+clt   :   0 clv   :   0 clz   :   0 com   :   6 cp    :   1 cpc   :   0 
+cpi   :   4 cpse  :   0 dec   :   1 eor   :   0 fmul  :   0 fmuls :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :  11 inc   :   3 jmp   :   9 
+ld    :   0 ldd   :   0 ldi   :  29 lds   :   7 lpm   :   2 lsl   :   1 
+lsr   :   7 mov   :   3 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   0 or    :   7 ori   :   0 out   :  11 pop   :   0 
+push  :   0 rcall :   0 ret   :   5 reti  :   1 rjmp  :   2 rol   :   1 
+ror   :   7 sbc   :   0 sbci  :   0 sbi   :   0 sbic  :   0 sbis  :   0 
 sbiw  :   0 sbr   :   2 sbrc  :   0 sbrs  :   1 sec   :   0 seh   :   0 
 sei   :   1 sen   :   0 ser   :   0 ses   :   0 set   :   0 sev   :   0 
-sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  11 
+sez   :   0 sleep :   0 spm   :   0 st    :   0 std   :   0 sts   :  15 
 sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
-Instructions used: 36 out of 113 (31.9%)
+Instructions used: 34 out of 113 (30.1%)
 
 "ATmega328P" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x000214    412      0    412   32768   1.3%
-[.dseg] 0x000100 0x000100      0      0      0    2048   0.0%
+[.cseg] 0x000000 0x0001ca    402      8    410   32768   1.3%
+[.dseg] 0x000100 0x000102      0      2      2    2048   0.1%
 [.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
 
 Assembly complete, 0 errors, 0 warnings
