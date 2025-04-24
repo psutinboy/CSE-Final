@@ -29,7 +29,7 @@ jmp matrix_init_end
 
 matrix_init:
     ; Initialize LED matrix variables
-    LDI R16, 0
+    LDI R16, 0x00
     STS num_rows_to_light, R16   ; Start with no rows lit
     STS current_row, R16         ; Start at row 0
     RET
@@ -62,14 +62,16 @@ update_matrix_rows:
     
     ; R24 now contains a value between 0-7, add 1 to get 1-8 rows
     INC R24
+	LDI R16, 0x08	; Flip value from 1-8 to 8-1
+	SUB R16, R24
     
     ; Store the number of rows to light (capped at 8)
-    CPI R24, MATRIX_ROWS+1
+    CPI R16, MATRIX_ROWS+1
     BRLO store_num_rows
-    LDI R24, MATRIX_ROWS
+    LDI R16, MATRIX_ROWS
     
 store_num_rows:
-    STS num_rows_to_light, R24
+    STS num_rows_to_light, R16
     RET
     
 update_matrix_rows_end:
@@ -89,18 +91,9 @@ display_matrix:
     
     ; Check if the current row is less than the number of rows to light
     CP R22, R23
-    BRLO row_is_active
-    
-    ; Row is not active, turn off all LEDs
-    LDI R25, 0x00         ; No row selected
-    LDI R24, MATRIX_NO_COLS_ON  ; All columns off
-    CALL shift_word
-    
-    ; Increment the current row and wrap around if needed
-    INC R22
-    CPI R22, MATRIX_ROWS
-    BRLO save_current_row
-    CLR R22
+    BRLO row_is_not_active
+	JMP row_is_active
+
     
 save_current_row:
     STS current_row, R22
@@ -131,5 +124,17 @@ row_is_active:
     BRLO save_current_row
     CLR R22
     JMP save_current_row
-    
+
+row_is_not_active:
+    ; Row is not active, turn off all LEDs
+    LDI R25, 0x00         ; No row selected
+    LDI R24, MATRIX_NO_COLS_ON  ; All columns off
+    CALL shift_word
+
+	; Increment the current row and wrap around if needed
+    INC R22
+    CPI R22, MATRIX_ROWS
+    BRLO save_current_row
+    CLR R22
+
 display_matrix_end: 

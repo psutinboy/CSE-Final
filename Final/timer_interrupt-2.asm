@@ -9,7 +9,7 @@ STS TCNT1H, R16
 LDI R16, normal_timer_mode
 STS TCCR1A, R16
 ;set internal clock/prescaler
-LDI R16, slow_timer				;can be adjusted; very_slow_timer, slow_timer, medium_timer, fast_timer, very_fast_timer
+LDI R16, very_fast_timer			;can be adjusted; very_slow_timer, slow_timer, medium_timer, fast_timer, very_fast_timer
 STS TCCR1B, R16
 ;enable overflow interrupt
 LDI R16, enable_timer_interrupt

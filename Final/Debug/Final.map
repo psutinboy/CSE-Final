@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.2.8  C:\Users\Grant Ledbetter\Documents\Atmel Studio\7.0\Final\Final\main.asm Tue Apr 15 10:19:57 2025
+AVRASM ver. 2.2.8  C:\Users\banpu\Documents\Atmel Studio\7.0\CSE-Final\Final\main.asm Thu Apr 24 13:07:19 2025
 
 
 EQU  SIGNATURE_000 0000001e
@@ -696,7 +696,7 @@ EQU  TWIaddr      00000030
 EQU  SPMRaddr     00000032
 EQU  INT_VECTORS_SIZE 00000034
 CSEG MAIN         0000001c
-CSEG timer1_overflow_service 000000e0
+CSEG timer1_overflow_service 000000e4
 EQU  CLOCK        00000005
 EQU  LATCH        00000004
 EQU  DATA         00000003
@@ -742,6 +742,7 @@ CSEG read_converter 00000082
 CSEG keep_polling 00000085
 EQU  MATRIX_ROWS  00000008
 EQU  MATRIX_COLS  00000008
+EQU  MATRIX_START_ROW 00000007
 EQU  MATRIX_ALL_COLS_ON 00000000
 EQU  MATRIX_NO_COLS_ON 000000ff
 EQU  POT_MAX      000003ff
@@ -751,12 +752,13 @@ DSEG num_rows_to_light 00000100
 DSEG current_row  00000101
 CSEG matrix_init_end 0000009f
 CSEG matrix_init  00000099
-CSEG update_matrix_rows_end 000000b6
+CSEG update_matrix_rows_end 000000b8
 CSEG update_matrix_rows 000000a1
-CSEG store_num_rows 000000b3
-CSEG display_matrix_end 000000d8
-CSEG display_matrix 000000b8
-CSEG row_is_active 000000c9
-CSEG save_current_row 000000c6
-CSEG main_loop    000000db
-CSEG end          000000df
+CSEG store_num_rows 000000b5
+CSEG display_matrix_end 000000dc
+CSEG display_matrix 000000ba
+CSEG row_is_not_active 000000d4
+CSEG row_is_active 000000c5
+CSEG save_current_row 000000c2
+CSEG main_loop    000000df
+CSEG end          000000e3

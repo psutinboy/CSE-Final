@@ -13,6 +13,7 @@
 ;;; LED Matrix Configuration
 .equ MATRIX_ROWS = 8          ; Number of rows in the LED matrix
 .equ MATRIX_COLS = 8          ; Number of columns in the LED matrix
+.equ MATRIX_START_ROW = 7     ; Row to start on
 
 ;;; Matrix Control Constants
 .equ MATRIX_ALL_COLS_ON = 0x00  ; Value to light all columns (active LOW)
